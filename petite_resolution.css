@@ -1,0 +1,497 @@
+p, h1, h2, h3, h4, h5, input
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+body /*il faut enlever les bandes blanches qui contournent les blocs principaux*/
+{
+	margin: 0px;
+}
+
+header
+{
+    width: 100%;
+    text-align: center;
+}
+
+.tete/* portion de la page avec le logo et le menu maintenant au dessus du header*/
+{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	/*position: fixed; 
+	background: #ffff; 
+	margin: 0px 0px 0px 0px; /*au cas où, pour en faire un menu de navigation */
+}
+
+
+.tete1:nth-child(1) /* logo */
+{
+	width: 73%;
+	display: flex;
+	padding: 1%;
+	order: 1;
+}
+
+.logoB /* création d'une seconde classe image pour la disposer vers la gauche */
+{
+	justify-content: center;
+}
+
+.tetebis:nth-child(2) /* conteneur des ancres */ /*?*/
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	order: 3;	
+}
+
+.tetebis a
+
+{
+	width: 50%;
+}
+
+.tete3, .tete2
+{
+	border-bottom: 3px solid #F2F2F2;
+	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
+}
+
+.tete2:hover, .tete3:hover
+{
+	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px; 
+	color: #0065FC;
+	border-bottom: 3px solid #0065FC;	
+}
+
+
+.tete4:hover /* dynamique de "s'inscrire" */
+{
+	margin: 20px 15px 20px 15px;
+	padding: 20px 15px 20px 15px; 
+	color: #0065FC;
+	border-top: 3px solid #0065FC;	
+}
+
+.lientete4:nth-child(3)  /*lien <a> qui contient <p> class tete4 */ 
+{
+	width: 25%;
+	order: 2;
+}
+
+.tete4/* s'inscrire */ 
+{
+	margin: 20px 15px 20px 15px;
+	padding: 20px 15px 20px 15px;	
+	color: #0065FC;
+	font-weight: bold;
+	text-align: center;
+}
+/* fin du menu top */
+
+.soustt, .tt /*tt=titre et soustt=sous-titre*/
+{
+	margin: 20px 30px 20px 30px;
+	text-align: justify center;
+}
+
+.rechercher /* bloc de la barre de recherche */
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 10px  10px 10px;
+	justify-content: center;
+}
+
+.rechercher1 /* image du point */
+{
+	background: #F2F2F2;
+	padding: 10px 15px 10px 15px; 
+	border-radius: 15px 0px 0px 15px;
+	color: black;
+
+}
+
+#pseudo /* case où l'on peut tapper */
+{
+
+	width: 100%;
+	height: 37px;
+	border: #F2F2F2 solid 1px;
+}
+
+header .rechercher .rechercher3 /* bouton rechercher de droite */
+{
+	background: #0065FC;
+	padding: 10px;
+	color: #ffff;
+	border-radius: 0px 15px 15px 0px;
+	font-size: 1em;
+	font-weight: medium;
+}
+
+/* second menu */
+
+article#titre /* article contenant "filtre" et 4 filtres différents */ 
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+article#titre div /* bloc des filtres */
+{
+	border: #F2F2F2 solid 3px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 50px;
+	height: 50px;
+	margin-top: 12px;
+	margin-right: 30px;
+}
+
+article#titre div:hover /* filtre au survol */
+{
+	opacity: 0.8;
+	box-shadow: 1px 1px 15px 10px #E0E0E0;
+	color: #ffff;
+	background: #0065FC;
+	cursor: pointer; 	
+}
+
+.h /* le mot "filtre" n'a pas d'effet" */
+{
+	margin-top: 28px;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+article#titre p.image /* bloc de paragraphe contenant les images des filtres. ATTENTION aux valeurs négatives ; faute de mieux. Sans ça les bulles se centre au niveau du mot filtre */
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: #DEEBFF solid 3px;
+	background-color: #DEEBFF;
+	margin-top: -3px;
+	margin-left: -3px;
+}
+
+article#titre p.image i /* image des blocs ci-dessus */
+{
+	color: #0065FC;
+	justify-content: space-between;
+	margin-top: 16px;
+	margin-left: 0px;
+}
+
+.titrebis /* bloc globale comprenant les différents filtres */
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*fin du second menu */
+
+.information /* <p> contenant .icone et une phrase */
+{
+	margin: 40px 20px 40px 20px;
+	text-align: center; /* center car align fait commencer le mot au niveau de i car i est contenu dans <p>; il faudrait au mieux faire une nouvelle boite div */
+}
+
+.icone /* icône informations */
+{
+	border: 2px solid #F2F2F2;
+	border-radius:20px;
+	padding: 5px 10px 5px 10px;
+	color: #0065FC;
+	margin-left: 10px;
+	margin-right: 7px;
+
+}
+
+/*fin du paragraphe*/
+
+h3 /* déclaration de longueur sur les gros titres de la page */
+{
+	width: 100%;
+}
+
+
+a:link /* normalisation des liens cliquables pour les rendres noir */
+{
+    color: black;
+    text-decoration: none;
+}
+      
+/* lien visité */
+a:visited /*idem*/
+{
+	color: black;
+}
+    
+    /* attention en "petite taille" hébergement passr après les plus populaires, donc après .hébergements2 */  
+
+	section#section /* Bloc qui contient hébergements et les plus populaires */
+	{
+		width: 100%;
+		max-width: 100%;
+		min-width: 50%;
+		flex-wrap: wrap-reverse;
+		display: flex;	
+	}
+
+
+	section.hebergements /*Bloc hébergements présentant 6 sous-blocs*/
+	{
+    	max-height: 100%;
+    	height: 100%;
+    	width: 100%;
+    	max-width: 100%;
+    	flex-wrap: wrap;
+    	background: #ffff;
+    	display: flex;
+    	padding: 0%;
+   		margin: 1%;
+   		border-radius: 20px;
+   		justify-content: center;  
+	}
+
+section#section .hebergements h3 /*titre "Hébergements à marseille*/
+{
+	padding-left: 7%; 
+	margin-top: 30px;
+
+}
+
+.hebergements h3, .hebergements2 h3 /* spécification pour les titres des deux conteneurs de #section*/
+{
+	padding-left: 20px;
+	padding-top: 10px;
+	justify-content: center;
+}
+
+.hebergements2 h3 i /* informations de l'image du tittre du bloc "bons plans" ; attention la marge bug à 600 px */
+{
+	margin-left: 45%; /* pas assez précis, peut être cprriger en créant un autre bloc H3 */
+	justify-content: flex-end;
+}
+
+section#section .hebergements a /* lien contenant des blocs du conteneur hébergement. Par contre la dimension de B 
+se fait par rapport à ce bloc */
+{
+	width: 90%;
+	margin: 3%;
+}
+
+.B /*bloc B contenant les (bloc p) images B1 et le paragraphe B1 */
+{
+	display : flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+    border: 3px solid #ffff;
+    background: #ffff;
+	margin: 0px;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px 5px #E0E0E0;    
+}
+
+.B1 /* p  contenant les images */
+{
+	max-width: 100%;
+	margin: 0px;
+	max-height: 150px;
+	overflow: hidden;
+
+}
+
+.B2 /* bloc p texte */ /* il faudrait créer un autre bloc pour les étoiles, le texte et le titre */
+{
+	padding-left: 5%;
+}
+
+.B:hover /* animation des blocs hébergements */
+{
+	border: 4px solid #ffff;
+	box-shadow: 1px 1px 15px 7px #E0E0E0;    
+}
+
+section#section .hebergements h3.Afficher /* le "afficher" est un peux trop bas à cause de la commande H3=margtop 30px */ /*peut-etre créer h5*/
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+section.hebergements2 /* Bloc sur le gros bloc hébergement */
+{
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+    display: flex;
+    padding: 3%;
+    margin: 0%;
+    min-width: 300px;
+    justify-content: center;
+}
+
+section#section section.hebergements2 a /* pour petites tailles : créations de nouveaux blocs <a>  dans hébergements2;*/
+{
+	width: 90%;
+	margin: 2%;
+	min-width: 230px;
+	height: 120px;
+}
+
+
+.BL /* gros bloc contenu dans le lien a */
+{
+    height: 100%; 
+    width: 100%;
+    background: #ffff;
+	padding: 0px;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px 8px #E0E0E0;
+	display: flex; 
+	flex-wrap: wrap;
+    border: 4px solid #ffff;	
+	margin: 0px;
+}
+
+.BL1 /* sous bloc contenant l'image */
+{
+	max-width: 135px;
+	margin: 0px;
+	max-height: 100%;
+	overflow: hidden;
+
+}
+
+.BL2 /* bloc p de texte */
+{
+	width: 60%;
+	padding-left: 5%;
+}
+
+.BL:hover /* animation des blocs de hébergement 2 */
+{
+	border: 5px solid #ffff;
+	box-shadow: 1px 1px 5px 9px #E0E0E0;    	
+}
+
+.bleu/*fonction couleur bleu*/
+{
+	color: #0065FC;
+}
+
+.gris /*fonction couleur gris*/
+{
+	color: #F2F2F2;
+}
+
+section#activites /*gros bloc activité */
+{
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background: #ffff;
+    display: flex;
+    margin-left: 10px
+    margin-right: 10px;
+
+}
+
+section#activites h3 /*titre activités à marseille*/
+{
+	margin-bottom: 8px; 
+	margin-left: 10px;
+}
+
+.conteneur, .conteneur2 /*définition de taille sinon bug */
+{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section#activites a /*lien contenant les bloc div*/
+{
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+    background: #ffff;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 20px;
+	box-shadow: 1px 1px 7px 2px #E0E0E0;
+}
+ 
+.conteneur .paysage img /* fonctionnalité de recadrement */
+{
+	width: 100%;
+}
+
+.conteneur .portrait img /* idem */
+{
+	height: 100%;
+}
+
+section#activites div p /* paragraphe contenant les images activités */
+{
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+section#activites a:hover /*animation des blocs activités */
+{
+	opacity: 0,9;
+	border-radius: 25px;
+	box-shadow: 1px 1px 10px 5px #E0E0E0; 
+}
+
+h5 /* informations sur les titres h5  de activité */
+{
+	width: 100%;
+	margin-left: 20px;
+}
+
+footer /* menu de fin divisé en trois blocs */
+{
+    
+    width: 100%;
+    background-color: #F2F2F2;
+    margin: 15px 0px 0px 0px; 
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+
+}
+
+footer h5 /*titre du pied de page*/
+{
+	width: 100%;
+	padding: 15px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+}
+
+footer div /* bloc de mots */
+{
+	max-width: 100%;
+	background-color: #F2F2F2;
+	margin: 20px 0px 10px 10px;
+	padding: 0px 0px 0px 15px;
+}
