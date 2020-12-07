@@ -137,7 +137,7 @@ header .rechercher .rechercher3 /* bouton rechercher de droite */
 
 /* second menu */
 
-article#titre /* article contenant "filtre" et 4 filtres différents */ 
+article#Filtres /* article contenant "filtre" et 4 filtres différents */ 
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -146,7 +146,7 @@ article#titre /* article contenant "filtre" et 4 filtres différents */
 	box-sizing: border-box;
 }
 
-article#titre div /* bloc des filtres */
+article#Filtres div /* bloc des filtres */
 {
 	border: #F2F2F2 solid 3px;
 	display: flex;
@@ -157,7 +157,7 @@ article#titre div /* bloc des filtres */
 	margin-right: 30px;
 }
 
-article#titre div:hover /* filtre au survol */
+article#Filtres div:hover /* filtre au survol */
 {
 	opacity: 0.8;
 	box-shadow: 1px 1px 15px 10px #E0E0E0;
@@ -173,7 +173,7 @@ article#titre div:hover /* filtre au survol */
 	margin-right: 20px;
 }
 
-article#titre p.image /* bloc de paragraphe contenant les images des filtres. ATTENTION aux valeurs négatives ; faute de mieux. Sans ça les bulles se centre au niveau du mot filtre */
+article#Filtres p.image /* bloc de paragraphe contenant les images des filtres. ATTENTION aux valeurs négatives ; faute de mieux. Sans ça les bulles se centre au niveau du mot filtre */
 {
 	width: 50px;
 	height: 50px;
@@ -184,7 +184,7 @@ article#titre p.image /* bloc de paragraphe contenant les images des filtres. AT
 	margin-left: -3px;
 }
 
-article#titre p.image i /* image des blocs ci-dessus */
+article#Filtres p.image i /* image des blocs ci-dessus */
 {
 	color: #0065FC;
 	justify-content: space-between;
