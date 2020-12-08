@@ -97,7 +97,7 @@ header
 .soustt, .tt /*tt=titre et soustt=sous-titre*/
 {
 	margin: 20px 30px 20px 30px;
-	text-align: justify center;
+	text-align: center;
 }
 
 .rechercher /* bloc de la barre de recherche */
@@ -132,7 +132,6 @@ header .rechercher .rechercher3 /* bouton rechercher de droite */
 	color: #ffff;
 	border-radius: 0px 15px 15px 0px;
 	font-size: 1em;
-	font-weight: medium;
 }
 
 /* second menu */
@@ -259,7 +258,7 @@ a:visited /*idem*/
     	background: #ffff;
     	display: flex;
     	padding: 0%;
-   		margin: 1%;
+   		margin: 0%;
    		border-radius: 20px;
    		justify-content: center;  
 	}
@@ -407,9 +406,6 @@ section#activites /*gros bloc activité */
     flex-wrap: wrap;
     background: #ffff;
     display: flex;
-    margin-left: 10px
-    margin-right: 10px;
-
 }
 
 section#activites h3 /*titre activités à marseille*/
