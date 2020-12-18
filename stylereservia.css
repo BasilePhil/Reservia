@@ -219,6 +219,11 @@ a:visited /* idem */
 		justify-content: center;	
 	}
 
+	div#section a img
+	{
+		width: 100%;
+	}
+
 
 	section.hebergements /*Bloc hébergements présentant 6 sous-blocs*/
 	{

@@ -247,6 +247,11 @@ a:visited /*idem*/
 		display: flex;	
 	}
 
+	div#section a img
+	{
+		width: 100%;
+	}
+
 
 	section.hebergements /*Bloc hébergements présentant 6 sous-blocs*/
 	{
@@ -380,6 +385,12 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 .BL2 /* bloc p de texte */
 {
 	padding-left: 5%;
+}
+
+@media (max-width: 400px) 
+{
+	.BL2
+	{padding-left: 0%;}
 }
 
 .BL:hover /* animation des blocs de hébergement 2 */
