@@ -24,7 +24,6 @@ header
 	margin: 0px 0px 0px 0px;/*au cas où, pour en faire un menu de navigation*/
 }
 
-
 .tete1 /* logo */
 {
  	width: 10%;
@@ -94,6 +93,8 @@ header
 	width: 100%;
 	height: 37px;
 	border: #F2F2F2 solid 1px;
+	font-weight: bold;
+	padding-left: 10px;
 }
 
 header .rechercher .rechercher3 /* bouton rechercher de droite */
@@ -104,6 +105,12 @@ header .rechercher .rechercher3 /* bouton rechercher de droite */
 	border-radius: 0px 15px 15px 0px;
 	font-size: 1em;
 }
+
+.loupe
+{
+	display: none;
+}
+
 
 /* second menu */
 
@@ -167,6 +174,7 @@ div#Filtres p.image i /* image des blocs ci-dessus */
 	margin-right: 10px;
 	margin-left: 10px;
 	font-size: 1em; /* augmenter la taille les faits descendre, je pense que c'est à cause de la marge auto */
+	font-weight: bold;
 }
 
 /*fin du second menu */
@@ -241,15 +249,19 @@ a:visited /* idem */
    
 	}
 
-.hebergements h3, .hebergements2 h3 /* spécification pour les titres des deux conteneurs de #section*/
+.hebergements2 h3 /* spécification pour les titres des deux conteneurs de #section*/
 {
 	padding-left: 20px;
-	padding-top: 10px
+	padding-top: 10px;
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+	display: inline-flex;
+	justify-content: space-between;
 }
 
-.hebergements2 h3 i /* informations de l'image du tittre du bloc "bons plans" ; attention la marge bug à 600 px */
+.hebergements2 h3 i /* informations de l'image du tittre du bloc "bons plans"*/
 {
-	margin-left: 33%;
+	padding-right: 15px;
 }
 
 div#section section.hebergements a /* lien contenant des blocs du conteneur hébergement. Par contre la dimension de B 
@@ -260,9 +272,17 @@ se fait par rapport à ce bloc */
 	min-width: 230px;
 }
 
+.thebergements
+{
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+
 .B /*bloc B contenant les (bloc p) images B1 et le paragraphe B1 */
 {
-	display : flex;
+	/*display : flex;*/
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
@@ -276,17 +296,28 @@ se fait par rapport à ce bloc */
 
 .B1 /* p  contenant les images */
 {
-
 	margin: 0px;
 	max-height: 125px;
 	overflow: hidden;
-
 }
 
-.B2 /* bloc p texte */
+.B2 /* bloc p texte de titre*/
+{
+	font-size: 0.95em;
+	margin: 3px 0px 0px 10px;
+	font-weight: bold;	
+}
+
+.B3 /*bloc p texte de sous titre */
 {
 	font-size: 0.9em;
-	margin: 0px 0px 0px 10px;	
+	margin: 3px 0px 0px 10px;	
+}
+
+.Afficher
+{
+	font-size: 1.05em;
+	padding-left: 40px;
 }
 
 .B:hover /* animation des blocs hébergements */
@@ -310,19 +341,29 @@ section.hebergements2 /* Bloc sur le gros bloc hébergement */
     justify-content: center;
 }
 
+section.hebergements2 a.a1
+{
+	margin: 20px 20px 5px 20px;	
+}
+
+section.hebergements2 a.a3
+{
+	margin: 5px 20px 30px 20px;		
+}
+
 .BL /* gros bloc contenu dans le lien a */
 {
     height: 120px; 
     width: 330px;
     background: #ffff;
+    overflow: hidden;
 	padding: 0px;
-	overflow: hidden;
 	border-radius: 20px;
 	box-shadow: 1px 1px 15px 8px #E0E0E0;
 	display: flex; 
 	flex-wrap: wrap;
     border: 4px solid #ffff;	
-	margin: 20px;
+	margin: 0px 20px 20px 20px;
 }
 
 .BL1 /* sous bloc contenant l'image */
@@ -333,10 +374,32 @@ section.hebergements2 /* Bloc sur le gros bloc hébergement */
 	overflow: hidden;
 }
 
-.BL2 /* bloc p de texte */
+h2.BL2 /* bloc p de texte */
 {
 	margin: 5px 0px 0px 10px;
+	font-size: 0.95em;
+	height: 1em;
+}
+
+section .margehaut
+{
+	margin-top: 7px;
+}
+
+.BL3
+{
 	font-size: 0.9em;
+	margin: 5px 0px 0px 10px;	
+}
+
+.margehaut2
+{
+	margin-top: 50px;
+}
+
+.margehaut3
+{
+	margin-top: 30px;
 }
 
 .BL:hover /* animation des blocs de hébergement 2 */
@@ -353,6 +416,11 @@ section.hebergements2 /* Bloc sur le gros bloc hébergement */
 .gris /*fonction couleur gris*/
 {
 	color: #F2F2F2;
+}
+
+section span
+{
+	font-weight: bold;
 }
 
 section#activites /*gros bloc activité */

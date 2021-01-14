@@ -25,7 +25,6 @@ header
 	margin: 0px 0px 0px 0px; /*au cas où, pour en faire un menu de navigation */
 }
 
-
 .tete1:nth-child(1) /* logo */
 {
 	width: 73%;
@@ -114,7 +113,6 @@ header
 	padding: 10px 15px 10px 15px; 
 	border-radius: 15px 0px 0px 15px;
 	color: black;
-
 }
 
 #pseudo /* case où l'on peut tapper */
@@ -123,15 +121,22 @@ header
 	width: 100%;
 	height: 37px;
 	border: #F2F2F2 solid 1px;
+	font-weight: bold;
+	padding-left: 10px;	
 }
 
 header .rechercher .rechercher3 /* bouton rechercher de droite */
 {
 	background: #0065FC;
-	padding: 10px;
+	padding: 10px 13px 10px 13px;
 	color: #ffff;
-	border-radius: 0px 15px 15px 0px;
+	border-radius: 15px 15px 15px 15px;
 	font-size: 1em;
+}
+
+.louper
+{
+	display: none;
 }
 
 /* second menu */
@@ -172,6 +177,14 @@ div#Filtres div:hover /* filtre au survol */
 	margin-right: 20px;
 }
 
+div#Filtres h4
+{
+	width: 90%;
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+
 div#Filtres p.image /* bloc de paragraphe contenant les images des filtres. ATTENTION aux valeurs négatives ; faute de mieux. Sans ça les bulles se centre au niveau du mot filtre */
 {
 	width: 50px;
@@ -195,6 +208,7 @@ div#Filtres p.image i /* image des blocs ci-dessus */
 {
 	margin-right: 10px;
 	margin-left: 10px;
+	font-weight: bold;	
 }
 
 /*fin du second menu */
@@ -218,11 +232,10 @@ div#Filtres p.image i /* image des blocs ci-dessus */
 
 /*fin du paragraphe*/
 
-h3 /* déclaration de longueur sur les gros titres de la page */
+h3
 {
 	width: 100%;
 }
-
 
 a:link /* normalisation des liens cliquables pour les rendres noir */
 {
@@ -275,17 +288,20 @@ div#section .hebergements h3 /*titre "Hébergements à marseille*/
 
 }
 
-.hebergements h3, .hebergements2 h3 /* spécification pour les titres des deux conteneurs de #section*/
+.hebergements2 h3 /* spécification pour les titres des deux conteneurs de #section*/
 {
 	padding-left: 20px;
 	padding-top: 10px;
 	justify-content: center;
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+	display: inline-flex;
+	justify-content: space-between;	
 }
 
-.hebergements2 h3 i /* informations de l'image du tittre du bloc "bons plans" ; attention la marge bug à 600 px */
+.hebergements2 h3 i /* informations de l'image du tittre du bloc "bons plans"*/
 {
-	margin-left: 45%; /* pas assez précis, peut être cprriger en créant un autre bloc H3 */
-	justify-content: flex-end;
+	padding-right: 15px;
 }
 
 div#section .hebergements a /* lien contenant des blocs du conteneur hébergement. Par contre la dimension de B 
@@ -295,10 +311,16 @@ se fait par rapport à ce bloc */
 	margin: 3%;
 }
 
+.thebergements
+{
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+
 .B /*bloc B contenant les (bloc p) images B1 et le paragraphe B1 */
 {
-	display : flex;
-	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
     border: 3px solid #ffff;
@@ -315,12 +337,20 @@ se fait par rapport à ce bloc */
 	margin: 0px;
 	max-height: 150px;
 	overflow: hidden;
-
 }
 
-.B2 /* bloc p texte */ /* il faudrait créer un autre bloc pour les étoiles, le texte et le titre */
+.B2 /* titre du bloc */ 
 {
-	padding-left: 5%;
+	padding-left: 10px;
+	font-size: 0.95em;
+	margin: 5px 0px 0px 0px;
+	font-weight: bold;		
+}
+
+.B3 /*bloc p texte de sous titre */
+{
+	font-size: 0.9em;
+	margin: 3px 0px 0px 10px;	
 }
 
 .B:hover /* animation des blocs hébergements */
@@ -329,10 +359,13 @@ se fait par rapport à ce bloc */
 	box-shadow: 1px 1px 15px 7px #E0E0E0;    
 }
 
-div#section .hebergements h3.Afficher /* le "afficher" est un peux trop bas à cause de la commande H3=margtop 30px */ /*peut-etre créer h5*/
+div#section .hebergements h3.Afficher /*modifit afficher*/
 {
-	margin-top: 10px;
-	margin-bottom: 30px;
+	font-size: 1.05em;
+	text-align: left;
+	padding: 20px 0px 30px 15px;
+	margin: 0px 0px 5px 0px;
+
 }
 
 section.hebergements2 /* Bloc sur le gros bloc hébergement */
@@ -367,8 +400,8 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 	overflow: hidden;
 	border-radius: 20px;
 	box-shadow: 1px 1px 15px 8px #E0E0E0;
-	display: flex; 
-	flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;	
     border: 4px solid #ffff;	
 	margin: 0px;
 }
@@ -382,9 +415,11 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 
 }
 
-.BL2 /* bloc p de texte */
+h2.BL2 /* bloc p de texte */
 {
-	padding-left: 5%;
+	margin: 5px 0px 0px 10px;
+	font-size: 0.95em;
+	height: 1em;
 }
 
 @media (max-width: 400px) 
@@ -392,6 +427,28 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 	.BL2
 	{padding-left: 0%;}
 }
+
+section .margehaut
+{
+	margin-top: 7px;
+}
+
+.BL3
+{
+	font-size: 0.9em;
+	margin: 5px 0px 0px 10px;	
+}
+
+.margehaut2
+{
+	margin-top: 50px;
+}
+
+.margehaut3
+{
+	margin-top: 30px;
+}
+
 
 .BL:hover /* animation des blocs de hébergement 2 */
 {
@@ -409,6 +466,11 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 	color: #F2F2F2;
 }
 
+section span
+{
+	font-weight: bold;
+}
+
 section#activites /*gros bloc activité */
 {
     width: 100%;
@@ -420,8 +482,8 @@ section#activites /*gros bloc activité */
 
 section#activites h3 /*titre activités à marseille*/
 {
-	margin-bottom: 8px; 
-	margin-left: 10px;
+	padding-left: 20px;
+	margin-bottom: 0px;
 }
 
 .conteneur, .conteneur2 /*définition de taille sinon bug */
@@ -474,6 +536,7 @@ h5 /* informations sur les titres h5  de activité */
 {
 	width: 100%;
 	margin-left: 20px;
+	font-size: 1em;
 }
 
 footer /* menu de fin divisé en trois blocs */
