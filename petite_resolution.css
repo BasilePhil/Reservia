@@ -309,6 +309,7 @@ se fait par rapport à ce bloc */
 {
 	width: 90%;
 	margin: 3%;
+	max-width: 450px;
 }
 
 .thebergements
@@ -322,6 +323,7 @@ se fait par rapport à ce bloc */
 .B /*bloc B contenant les (bloc p) images B1 et le paragraphe B1 */
 {
 	width: 100%;
+	max-width: 450px;	
 	height: 100%;
     border: 3px solid #ffff;
     background: #ffff;
@@ -333,7 +335,6 @@ se fait par rapport à ce bloc */
 
 .B1 /* p  contenant les images */
 {
-	max-width: 100%;
 	margin: 0px;
 	max-height: 150px;
 	overflow: hidden;
@@ -378,7 +379,7 @@ section.hebergements2 /* Bloc sur le gros bloc hébergement */
     display: flex;
     padding: 3%;
     margin: 0%;
-    min-width: 300px;
+    min-width: 200px;
     justify-content: center;
 }
 
@@ -386,7 +387,7 @@ div#section section.hebergements2 a /* pour petites tailles : créations de nouv
 {
 	width: 90%;
 	margin: 2%;
-	min-width: 230px;
+	min-width: 200px;
 	height: 120px;
 }
 
@@ -425,7 +426,10 @@ h2.BL2 /* bloc p de texte */
 @media (max-width: 400px) 
 {
 	.BL2
-	{padding-left: 0%;}
+	{margin: 5px 0px 0px 1px;}
+
+	h2.BL2 /* bloc p de texte */
+	{margin: 5px 0px 0px 1px;}
 }
 
 section .margehaut
@@ -497,6 +501,7 @@ section#activites h3 /*titre activités à marseille*/
 section#activites a /*lien contenant les bloc div*/
 {
 	width: 90%;
+	max-width: 500px;
 	display: flex;
 	flex-wrap: wrap;
     background: #ffff;
@@ -506,6 +511,11 @@ section#activites a /*lien contenant les bloc div*/
 	box-shadow: 1px 1px 7px 2px #E0E0E0;
 }
  
+.conteneur .portrait img, .conteneur .paysage img
+{
+	display: none;
+}
+
 .conteneur .paysage img /* fonctionnalité de recadrement */
 {
 	width: 100%;
@@ -516,13 +526,42 @@ section#activites a /*lien contenant les bloc div*/
 	height: 100%;
 }
 
+section#activites div.div1 p
+{
+	background-image: url(activites/vp2.jpg);
+}
+
+section#activites div.div2 p
+{
+	background-image: url(activites/fdp2.jpg);
+}
+
+section#activites div.div3 p
+{
+	background-image: url(activites/if2.jpg);
+}
+
+section#activites div.div4 p
+{
+	background-image: url(activites/pnc2.jpg);
+}
+
+section#activites div.div5 p
+{
+	background-image: url(activites/ndg2.jpg);
+}
+
+section#activites div.div6 p
+{
+	background-image: url(activites/pl2.jpg);
+}
+
 section#activites div p /* paragraphe contenant les images activités */
 {
-	max-width: 100%;
+	width: 600px;
+	height: 200px;
 	margin: 0px;
-	padding: 0px;
-	max-height: 200px;
-	overflow: hidden;
+	padding: 0px;	
 }
 
 section#activites a:hover /*animation des blocs activités */
@@ -535,8 +574,9 @@ section#activites a:hover /*animation des blocs activités */
 h5 /* informations sur les titres h5  de activité */
 {
 	width: 100%;
-	margin-left: 20px;
-	font-size: 1em;
+	padding-left: 20px;
+	font-size: 0.95em;
+	margin: 15px 0px 15px 0px;
 }
 
 footer /* menu de fin divisé en trois blocs */
@@ -544,7 +584,7 @@ footer /* menu de fin divisé en trois blocs */
     
     width: 100%;
     background-color: #F2F2F2;
-    margin: 15px 0px 0px 0px; 
+    margin: 45px 0px 0px 0px; 
     justify-content: center;
     padding: 10px 0px 30px 0px;
 

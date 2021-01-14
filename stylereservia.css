@@ -215,8 +215,16 @@ a:visited /* idem */
 {
 	color: black;
 }
-      
 
+@media (max-width: 1000px) 
+{
+	div#section section.hebergements
+	{width: 600px; min-width: 600px; max-width: 600px;}
+
+	div#section section.hebergements2
+	{width: 600px; min-width: 600px; max-width: 600px; padding: 0px; margin-left: 0px;}
+}
+      
 	div#section /* Bloc qui contient hébergements et les plus populaires */
 	{
 		width: 100%;
@@ -463,7 +471,6 @@ section#activites a
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0px 0px 0px 20px;
-
 }
 
 .conteneur .paysage img /* fonctionnalité de recadrement */
@@ -479,6 +486,12 @@ section#activites a
 section#activites .conteneur a /*taille des bloc div en fonciton de <a> lui meme par rapport au conteneur*/
 {
 	width: 40%;
+}
+
+@media (max-width: 799px) 
+{
+	.conteneur /*deuxième conteneur possédant 3 blocs (2 conteneurs) */
+	{width: 100%; display: flex; flex-wrap: wrap; justify-content: center; margin: 0px 0px 20px 20px;}	
 }
 
 section#activites .conteneur2 a /*taille des bloc div en fonciton de <a> lui même se change par rapport au conteneur*/
@@ -618,8 +631,7 @@ footer h5 /*titre footer*/
 
 footer div /* bloc de mots */
 {
-	width: 30%;
-	max-width: 30%;
+	width: 32%;
 	background-color: #F2F2F2;
-	margin-left: 1%;
+	margin-left: 5px;
 }
