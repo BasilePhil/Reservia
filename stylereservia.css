@@ -97,6 +97,11 @@ header
 	padding-left: 10px;
 }
 
+#pseudo::placeholder
+{
+	color: black
+}
+
 header .rechercher .rechercher3 /* bouton rechercher de droite */
 {
 	background: #0065FC;
@@ -483,6 +488,11 @@ section#activites a
 	height: 100%
 }
 
+section#activites a div p span.phot2
+{
+	display: none
+}
+
 section#activites .conteneur a /*taille des bloc div en fonciton de <a> lui meme par rapport au conteneur*/
 {
 	width: 40%;
@@ -505,7 +515,6 @@ section#activites .conteneur2 a /*taille des bloc div en fonciton de <a> lui mê
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
-
 }
 
 .div1

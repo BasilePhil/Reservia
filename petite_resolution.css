@@ -31,7 +31,11 @@ header
 	display: flex;
 	padding: 1%;
 	order: 1;
+
 }
+
+@media (max-width: 450px)
+{ .tete1:nth-child(1){width: 65%; padding: 1% 1% 1% 10px;}  }
 
 .logoB /* création d'une seconde classe image pour la disposer vers la gauche */
 {
@@ -123,6 +127,11 @@ header
 	border: #F2F2F2 solid 1px;
 	font-weight: bold;
 	padding-left: 10px;	
+}
+
+#pseudo::placeholder
+{
+	color: black
 }
 
 header .rechercher .rechercher3 /* bouton rechercher de droite */
@@ -501,7 +510,7 @@ section#activites h3 /*titre activités à marseille*/
 section#activites a /*lien contenant les bloc div*/
 {
 	width: 90%;
-	max-width: 500px;
+	max-width: 335px;
 	display: flex;
 	flex-wrap: wrap;
     background: #ffff;
@@ -510,58 +519,18 @@ section#activites a /*lien contenant les bloc div*/
 	border-radius: 20px;
 	box-shadow: 1px 1px 7px 2px #E0E0E0;
 }
- 
-.conteneur .portrait img, .conteneur .paysage img
-{
-	display: none;
-}
-
-.conteneur .paysage img /* fonctionnalité de recadrement */
-{
-	width: 100%;
-}
-
-.conteneur .portrait img /* idem */
-{
-	height: 100%;
-}
-
-section#activites div.div1 p
-{
-	background-image: url(activites/vp2.jpg);
-}
-
-section#activites div.div2 p
-{
-	background-image: url(activites/fdp2.jpg);
-}
-
-section#activites div.div3 p
-{
-	background-image: url(activites/if2.jpg);
-}
-
-section#activites div.div4 p
-{
-	background-image: url(activites/pnc2.jpg);
-}
-
-section#activites div.div5 p
-{
-	background-image: url(activites/ndg2.jpg);
-}
-
-section#activites div.div6 p
-{
-	background-image: url(activites/pl2.jpg);
-}
 
 section#activites div p /* paragraphe contenant les images activités */
 {
-	width: 600px;
-	height: 200px;
+	width: 335px;
+	height: 160px;
 	margin: 0px;
-	padding: 0px;	
+	padding: 0px;
+}
+
+section#activites a div p span.phot1
+{
+	display: none
 }
 
 section#activites a:hover /*animation des blocs activités */
@@ -576,7 +545,7 @@ h5 /* informations sur les titres h5  de activité */
 	width: 100%;
 	padding-left: 20px;
 	font-size: 0.95em;
-	margin: 15px 0px 15px 0px;
+	margin: 18px 0px 18px 0px;
 }
 
 footer /* menu de fin divisé en trois blocs */
