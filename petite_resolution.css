@@ -72,15 +72,6 @@ header
 	border-bottom: 3px solid #0065FC;	
 }
 
-
-.tete4:hover /* dynamique de "s'inscrire" */
-{
-	margin: 20px 15px 20px 15px;
-	padding: 20px 15px 20px 15px; 
-	color: #0065FC;
-	border-top: 3px solid #0065FC;	
-}
-
 .lientete4:nth-child(3)  /*lien <a> qui contient <p> class tete4 */ 
 {
 	width: 25%;

@@ -45,7 +45,7 @@ header
 	padding: 20px 15px 20px 15px;
 }
 
-.tete2:hover, .tete3:hover, .tete4:hover /* dynamique */
+.tete2:hover, .tete3:hover/* dynamique */
 {
 	margin: 20px 15px 20px 15px;
 	padding: 20px 15px 20px 15px; 
